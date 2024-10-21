@@ -46,6 +46,9 @@ npm i react-bootstrap
 npm i react-toastify
 npm i react-datetime
 npm i sass
+npm i jssha
+npm i jwt-decode
+
 #***********************************************************************************************
 
 #***********************************************************************************************
@@ -57,6 +60,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'react-toastify/dist/react-toastify.css';
 
 import 'bootstrap/dist/js/bootstrap.bundle.js
+import 'scss/volt.scss'
 #***********************************************************************************************
 
 #***********************************************************************************************
@@ -70,6 +74,62 @@ import 'bootstrap/dist/js/bootstrap.bundle.js
 7. Estructura básica componente App.tsx
 #***********************************************************************************************
 #***********************************************************************************************
+
 #***********************************************************************************************
+#***********************************************************************************************
+8. Cargar el recurso 01_formulario 
+#***********************************************************************************************
+
+    return (
+        <section className="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+            <div className="container-fluid">
+                <div className="row justify-content-center form-bg-image" data-background-lg="../../assets/img/illustrations/signin.svg">
+                    <div className="col-12 d-flex align-items-center justify-content-center">
+                        <div className="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                            <div className="text-center text-md-center mb-4 mt-md-0">
+                                <h1 className="mb-0 h3">Sign in to our platform</h1>
+                            </div>
+                            <Form className="mt-4">
+                                <Form.Group id="email" className="mb-4">
+                                    <Form.Label>Your Email</Form.Label>
+                                    <InputGroup>
+                                        <InputGroup.Text>
+                                            <i className='fa fa-envelope'></i>
+                                        </InputGroup.Text>
+                                        <Form.Control autoFocus required type="email" placeholder="example@company.com" />
+                                    </InputGroup>
+                                </Form.Group>
+                                <Form.Group>
+                                    <Form.Group id="password" className="mb-4">
+                                        <Form.Label>Your Password</Form.Label>
+                                        <InputGroup>
+                                            <InputGroup.Text>
+                                                <i className='fa fa-key'></i>
+                                            </InputGroup.Text>
+                                            <Form.Control required type="password" placeholder="Password" />
+                                        </InputGroup>
+                                    </Form.Group>
+
+                                </Form.Group>
+                                <Button variant="primary" type="submit" className="w-100">
+                                    Sign in
+                                </Button>
+                            </Form>
+                            <div className="mt-3 mb-4 text-center">
+                                <span className="fw-normal">or login with</span>
+                            </div>
+
+                            <div className="d-flex justify-content-center align-items-center mt-4">
+                                <span className="fw-normal">
+                                    Not registered? &nbsp;
+                                    <a href="./sign-up.html" className="fw-bold">Click here</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 #***********************************************************************************************
 #***********************************************************************************************

@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 import 'bootstrap/dist/js/bootstrap.bundle.js';
+import './scss/volt.scss'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
